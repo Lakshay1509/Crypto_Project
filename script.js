@@ -103,7 +103,7 @@ homebtn.addEventListener("click",()=>{
 
 window.onscroll = () => {
   animateSection(".content", 200);
-  animateSection(".faq", 550);
+  animateSection(".faq", 300);
   animateSection(".why-us",120)
 };
 
