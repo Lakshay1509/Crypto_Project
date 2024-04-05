@@ -24,28 +24,6 @@ const options = {
     'x-access-token': 'coinrankinge95bc29521c0493700611f9a23f9e63b4f14a7e5a5320467',
   },
 };
-
-    
-    // Fetch the data using the retrieved uuid
- fetch("https://api.coinranking.com/v2/coin/Qwsogvtv82FCd", options)
-      .then((response) => response.json())
-      .then((result) => {
-        // Update the priceElement with the fetched price
-        let fetchedPrice = Math.floor(result.data.coin.price*1000)/1000;
-        priceElementBTC.innerText = ` = $ ${fetchedPrice}`;
-      })
-      .catch((error) => console.error('Error fetching coin data:', error));
-
-      fetch("https://api.coinranking.com/v2/coin/razxDUgYGNAdQ", options)
-      .then((response) => response.json())
-      .then((result) => {
-        // Update the priceElement with the fetched price
-        let fetchedPrice = Math.round(result.data.coin.price*1000)/1000;
-        priceElementETH.innerText = ` = $ ${fetchedPrice}`;
-      })
-      .catch((error) => console.error('Error fetching coin data:', error));
-
-
       
       async function fetchData() {
         try {
