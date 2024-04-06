@@ -13,10 +13,22 @@ body{
     background-color: #010003;
 }
 
+.name{
+    display: flex;
+}
+
+.icon-main{
+    width: auto;
+    margin-top: 10px;
+}
+
+.icon-main img{
+    width: 80px;
+}
 .name a{
     
-        margin-top: 35px;
-        margin-left: 50px;
+        margin-top: 30px;
+        margin-left: 10px;
         display: flex;
         gap:1rem;
         font-family: "Bungee Spice", sans-serif;
